@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vRadar</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: teal;
+        }
+
+        header {
+            background-image: url(logo\ newyuhg.jpg);
+            background-size: cover;
+            background-position: center bottom;
+            height: 100vh;
+            width: 100%;
+            color: white;
+            padding: 20px;
+        }
+
+        footer{
+            background-color: teal;
+            color: black;
+            text-align: center;
+            padding: 20px;
+            justify-self: center;
+        }
+
+        nav ul {
+            list-style: none;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        h2 {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        #hero {
+            text-align: center;
+            padding: 50px 20px;
+            background: teal;
+            color: #fff;
+        }
+
+        #hero h1 {
+            font-size: 2.5em;
+        }
+
+        #hero p {
+            font-size: 1.2em;
+        }
+
+        .cta-button {
+            display: flex;
+            justify-self: center;
+            justify-content: center;
+            padding: 10px 20px;
+            background: black;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        #features, #roadmap {
+            padding: 50px 20px;
+            text-align: center;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin: 20px;
+        }
+
+        section {
+            padding: 50px 20px;
+            text-align: center;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin: 20px;
+        }
+
+        .card {
+            background-color: rgba(255, 255, 255, 0.5);
+            border-radius: 10px;
+            padding: 20px;
+            margin: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(10px);
+            width: calc(33.33% - 20px); /* Ensures 3 cards per row */
+            min-width: 250px;
+            box-sizing: border-box;
+            text-align: left;
+        }
+
+        .transparent-bg {
+            background-color: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(5px);
+        }
+
+        .card h2 {
+            margin-top: 0;
+        }
+
+        .card p {
+            color: #333;
+            text-align: left;
+        }
+
+        p{
+            text-align: left;
+        }
+
+        #main {
+            justify-self: center;
+            width: 100%;
+            display: block;
+        }
+
+        #main p {
+            justify-self: center;
+        }
+
+        #main h1 {
+            justify-self: center;
+        }
+        
+        #main a {
+            justify-self: center;
+        }
+
+        #why img{
+            position: absolute;
+            right: 0;
+        }
+
+        #dog{
+            position: absolute;
+            left: 0;
+        }
+
+        @media (max-width: 768px) {
+
+    .card {
+        width: 100%; /* Make cards full-width on mobile */
+        margin: 10px 0;
+        box-sizing: border-box;
+    }
+
+    .feature {
+        margin-bottom: 20px;
+    }
+
+    #dog, img {
+        max-width: 100%; /* Ensure images are responsive */
+        height: auto;
+    }
+
+    footer {
+        padding: 15px;
+        text-align: center;
+    }
+
+    /* Adjust text alignment and layout */
+    #main h1 {
+        font-size: 1.8em;
+        text-align: center;
+    }
+
+    #main p {
+        text-align: center;
+        margin: 10px 0;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <header>
+    </header>
+
+    <section class="card transparent-bg" id="main">
+        <h1>vRadar - <i>Your On-Chain WatchDog</i></h1>
+            <p>➠ Catch those shady moves early</p>
+            <p>➠ Ride with the big boys</p>
+            <p>➠ No more nasty surprises..</p>
+            <p>➠ Because opportunities are everywhere</p>
+        <a href="#features" class="cta-button">Get Started</a>
+    </section>
+
+    <h2>Why vRadar</h2>
+        <section class="card transparent-bg" id="main">
+            <div id="why">
+                <p>vRadar puts you in the loop:</p>
+                <p>➠ See when devs move funds 👀 – Catch those shady moves early</p>
+                <p>➠ Track whale buys & sells 🐋 – Ride with the big boys</p>
+                <p>➠ Get anti-rug alerts 🚨 – No more nasty surprises..</p>
+                <p>➠ Multi-chain support 🌐 – Because opportunities are everywhere</p>
+                <img src="an_AI-themed_teal_dog__1_-removebg-preview.png" width="750" height="750" alt="" id="dog">
+                <img src="dog-removebg-preview.png" alt="" width="750" height="750">
+            </div>
+        </section>
+<br>
+
+    <h2>Key Features</h2>
+    <section id="features">
+        <div class="feature card transparent-bg">
+            <h3>Dev wallet movements 👀</h3>
+            <p>Monitor developer wallet activities in real-time to detect suspicious transactions, large withdrawals, or unusual movements. Stay ahead of potential exit scams and maintain transparency in the projects you follow.</p>
+        </div>
+        <div class="feature card transparent-bg">
+            <h3>Whale buys & sells 🐋</h3>
+            <p>Keep an eye on significant market movements by tracking whale transactions. Identify large buys and sells that could impact token prices, helping you make informed trading decisions.</p>
+        </div>
+        <div class="feature card transparent-bg">
+            <h3>Anti-rug alerts 🛡️</h3>
+            <p>Receive instant alerts on potential rug pulls based on sudden liquidity withdrawals, contract changes, and suspicious developer actions. Protect your investments with automated risk detection.</p>
+        </div>
+        <div class="feature card transparent-bg">
+            <h3>Multi-chain support 🌍</h3>
+            <p>Track transactions across multiple blockchain networks seamlessly. Whether it's Ethereum, BSC, Solana, or others, our platform ensures you stay updated on critical activities across chains.</p>
+        </div>
+    </section>
+
+    <h2>Roadmap</h2>
+    <section id="roadmap">
+        <div class="card transparent-bg">
+            <strong>🚀Phase 1:</strong> Launch & Core Features (Week 1-2)
+            <p> 
+                <p>🔹 Automatic developer wallet tracking</p>
+                <p>🔹 Real-time holder & transaction monitoring</p>
+                <p>🔹 Whale detection for large buys & sells 🐋</p>
+                <p>🔹 Anti-rug alerts when devs sell holdings  ⚠️</p>
+                <p>🔹 vRadar goes live on Virtual Protocol</p>
+            </p>
+        </div>
+        <div class="card transparent-bg">
+            <strong>🌍Phase 2:</strong> Multi-Chain Expansion (Week 3-5)
+            <p>
+                <p>🔹 Adding support for BSC, Polygon, Arbitrum, Avalanche, Base, Core, and Sui</p>
+                <p>🔹 User-friendly chain selection for seamless tracking</p>
+                <p>🔹 Optimized performance & reduced RPC usage</p>
+                <p>🔹 Spam filter to avoid unnecessary alerts</p>
+                <p>🔹 Auto-reconnect feature to keep tracking active</p>
+            </p>
+        </div>
+        <div class="card transparent-bg">
+            <strong>📊Phase 3:</strong> Advanced Analytics & Insights (Week 6-8)
+            <p>
+                <p>🏦 Smarter tracking & deeper insights</p>
+                <p>🔹 Liquidity pool monitoring (add/remove liquidity)</p>
+                <p>🔹 Detect contract renouncements & ownership transfers</p>
+                <p>🔹 Monitor token supply changes (mint/burn events)</p>
+                <p>🔹 Historical transaction tracking for better analysis</p>
+                
+                <p>📈 Visual analytics & data insights</p>
+                <p>🔹 Web dashboard for real-time tracking</p>
+                <p>🔹 Historical trade data & whale movement trends</p>
+                <p>🔹 Top holder tracking & transaction heatmaps</p>
+            </p>
+        </div>
+        <div class="card transparent-bg">
+            <strong>🛡️Phase 4:</strong> Security & Automation (Week 9-10)
+            <p>
+                <p>🔹 Automated tracking setup via Telegram commands</p>
+                <p>🔹 Multi-contract tracking in a single bot</p>
+                <p>🔹 Customizable whale alerts (set thresholds per token)</p>
+                <p>🔹 Rug-check scoring system to assess risk levels</p>
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 vRadar. All rights reserved.</p>
+    </footer>
+</body>
+</html>
